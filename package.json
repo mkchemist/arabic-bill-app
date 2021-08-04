@@ -1,0 +1,57 @@
+{
+  "name": "logger-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node build/start",
+    "package": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cawa-93/vite-electron-builder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cawa-93/vite-electron-builder/issues"
+  },
+  "homepage": "https://github.com/cawa-93/vite-electron-builder#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "electron": "^13.1.7",
+    "electron-builder": "^22.11.7",
+    "electron-rebuild": "^2.3.5",
+    "mini-css-extract-plugin": "^2.1.0",
+    "sass": "^1.36.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.46.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "better-sqlite3": "^7.4.3",
+    "bootstrap": "^5.0.2",
+    "jspdf": "^2.3.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "redux-thunk": "^2.3.0",
+    "sweetalert2": "^11.0.20",
+    "xlsx": "^0.17.0"
+  },
+  "build": {
+    "appId": "nerhadou.app.com",
+    "win": {
+      "target": "nsis"
+    }
+  }
+}

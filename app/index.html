@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+    <style>
+        @font-face{font-family: 'Cairo'; src: url('fonts/Cairo/Cairo-Regular.ttf');}
+        body {
+            font-family: 'Cairo',sans-serif;
+        }
+    </style>
+    <title>Ahmed</title>
+</head>
+<body class="bg-dark text-light">
+    <div id="app"></div>
+    <script>
+        window.fs = require("fs")
+        window.db = require("better-sqlite3")
+        window.XLSX = require("xlsx")
+    </script>
+    <script src="app.bundle.js"></script>
+</body>
+</html>
